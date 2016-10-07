@@ -24,9 +24,9 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 @Entity
 @Table(name="cidade")
 @NamedQueries({ 
+	@NamedQuery(name = "Cidade.buscaPorId", query = "select c from Cidade c where c.id=:id"),
 	@NamedQuery(name = "Cidade.listar", query = "select c from Cidade c order by c.nome"),
 	@NamedQuery(name = "Cidade.listarPorEstado", query = "select c from Cidade c where c.estado = :estado order by c.nome"),
-	@NamedQuery(name = "Cidade.buscaPorId", query = "select c from Cidade c where c.id=:id"),
 	@NamedQuery(name = "Cidade.buscaPorNome", query = "select c from Cidade c where c.estado = :estado and c.nome=:nome") 
 })
 public class Cidade implements Serializable {
