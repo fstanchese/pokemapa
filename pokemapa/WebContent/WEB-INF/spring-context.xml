@@ -31,7 +31,7 @@
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost/pokemapa" />
-		<property name="username" value="fstanchese" />
+		<property name="username" value="root" />
 		<property name="password" value="123456" />
 	</bean>
 
